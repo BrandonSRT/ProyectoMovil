@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var mail = ""
+    @State private var password = ""
+
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Login(value: $mail, icon: "mail", placeholder: "E-mail")
+            Login(value: $password, icon: "lock", placeholder: "password", isSecure: true)
+
+        }
     }
 }
 
