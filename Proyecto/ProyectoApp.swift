@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct ProyectoApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView().environmentObject(SessionStore())
         }
+    }
+    
+
+}
+
+class AppDelegate : NSObject, UIApplicationDelegate{
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        FirebaseApp.configure()
+        
+        print("Firebase....")
+        
+        return true
     }
 }

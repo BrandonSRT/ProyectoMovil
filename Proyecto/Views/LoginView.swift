@@ -10,6 +10,40 @@ import SwiftUI
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var error:String = ""
+    @State private var showingAlert = false
+    @State private var alertTitle: String = "Oh no :("
+    
+    func errorCheck() -> String?{
+        if email.trimmingCharacters(in: .whitespaces).isEmpty ||
+            password.trimmingCharacters(in: .whitespaces).isEmpty
+            {
+            return "Please Fill in all fields."
+        }
+        return nil
+    }
+    func clear(){
+        self.email = ""
+        self.password = ""
+    }
+    func signIn(){
+        if let error = errorCheck(){
+            self.error = error
+            self.showingAlert = true
+            return
+        }
+        
+        AuthService.signIn(email: email, password: password, onSuccess: {
+            (user) in
+            self.clear()
+        }){
+            (errorMessage) in
+            print("Error \(errorMessage)")
+            self.error = errorMessage
+            self.showingAlert = true
+            return
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -22,10 +56,12 @@ struct LoginView: View {
                     Login(value: $email, icon: "envelope.fill", placeholder: "E-mail")
                     Login(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true)
                     
-                    Button(action: {}){
+                    Button(action: signIn){
                         Text("Log In").font(.title)
                             .modifier(LoginModifiers())
                         
+                    }.alert(isPresented: $showingAlert){
+                        Alert(title: Text(alertTitle), message: Text(error), dismissButton: .default(Text("OK")))
                     }
                 HStack{
                     Text("Don't have an account?")
