@@ -18,6 +18,9 @@
 		F595698727180EC500D55C5D /* LoginModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595698627180EC500D55C5D /* LoginModifiers.swift */; };
 		F595698927181A4000D55C5D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595698827181A4000D55C5D /* RegisterView.swift */; };
 		F595698C27181C6000D55C5D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595698B27181C6000D55C5D /* ImagePicker.swift */; };
+		F5A3B3F02721557100785FAF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B3EF2721557100785FAF /* Profile.swift */; };
+		F5A3B3F22721559700785FAF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B3F12721559700785FAF /* MainView.swift */; };
+		F5A3B3F4272155CF00785FAF /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B3F3272155CF00785FAF /* PostView.swift */; };
 		F5C3747B27200B2F00A72817 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3747A27200B2F00A72817 /* SessionStore.swift */; };
 		F5C3747D2720114300A72817 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3747C2720114300A72817 /* HomeView.swift */; };
 		F5D2B0882717E6F000BA5E7E /* ProyectoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2B0872717E6F000BA5E7E /* ProyectoApp.swift */; };
@@ -40,6 +43,9 @@
 		F595698627180EC500D55C5D /* LoginModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModifiers.swift; sourceTree = "<group>"; };
 		F595698827181A4000D55C5D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F595698B27181C6000D55C5D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F5A3B3EF2721557100785FAF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F5A3B3F12721559700785FAF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F5A3B3F3272155CF00785FAF /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		F5C3747A27200B2F00A72817 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		F5C3747C2720114300A72817 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F5D2B0842717E6F000BA5E7E /* Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +117,9 @@
 				F595698427180D3A00D55C5D /* LoginView.swift */,
 				F595698827181A4000D55C5D /* RegisterView.swift */,
 				F5C3747C2720114300A72817 /* HomeView.swift */,
+				F5A3B3EF2721557100785FAF /* Profile.swift */,
+				F5A3B3F12721559700785FAF /* MainView.swift */,
+				F5A3B3F3272155CF00785FAF /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,15 +294,18 @@
 				F595698227180AA800D55C5D /* Login.swift in Sources */,
 				F53E2C1B271CFBB20035F59E /* Extensions.swift in Sources */,
 				F5C3747D2720114300A72817 /* HomeView.swift in Sources */,
+				F5A3B3F02721557100785FAF /* Profile.swift in Sources */,
 				F5C3747B27200B2F00A72817 /* SessionStore.swift in Sources */,
 				F595698727180EC500D55C5D /* LoginModifiers.swift in Sources */,
 				F5D2B08A2717E6F000BA5E7E /* ContentView.swift in Sources */,
 				F595698C27181C6000D55C5D /* ImagePicker.swift in Sources */,
 				F595698927181A4000D55C5D /* RegisterView.swift in Sources */,
 				F595698527180D3A00D55C5D /* LoginView.swift in Sources */,
+				F5A3B3F4272155CF00785FAF /* PostView.swift in Sources */,
 				F53E2C1E271D06B00035F59E /* AuthService.swift in Sources */,
 				F53E2C19271CFAE00035F59E /* UsersModel.swift in Sources */,
 				F53E2C20271D06D10035F59E /* StorageService.swift in Sources */,
+				F5A3B3F22721559700785FAF /* MainView.swift in Sources */,
 				F5D2B0882717E6F000BA5E7E /* ProyectoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
