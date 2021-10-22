@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct PostView: View {
     
     @State private var postImage: Image?
@@ -30,15 +30,21 @@ struct PostView: View {
             self.showingAlert = true
             return
         }
-        self.clear()
-            //Firebase
+        PostService.uploadPost(caption: text, imageData: imageData, onSuccess: {
+            self.clear()
+        }){
+            (errorMessage) in
+            self.error = errorMessage
+            self.showingAlert = true
+            return
+        }
     }
 
     
     func clear(){
         self.text = ""
         self.imageData = Data()
-        self.postImage = Image(systemName: "photo.fill")
+        self.postImage = Image(systemName: "")
     }
     
     func errorCheck() -> String?{
@@ -61,7 +67,7 @@ struct PostView: View {
                             self.showingActionSheet = true
                         }
                 }else{
-                    Image(systemName: "photo.fill").resizable()
+                    WebImage(url: URL(string: "https://image.shutterstock.com/image-vector/camera-add-icon-260nw-1054194038.jpg")!).resizable()
                         .frame(width: 300, height: 300)
                         .onTapGesture(){
                             self.showingActionSheet = true

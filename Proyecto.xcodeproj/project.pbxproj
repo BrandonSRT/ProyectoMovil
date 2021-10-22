@@ -13,6 +13,10 @@
 		F53E2C1E271D06B00035F59E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E2C1D271D06B00035F59E /* AuthService.swift */; };
 		F53E2C20271D06D10035F59E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E2C1F271D06D10035F59E /* StorageService.swift */; };
 		F53F3A9C27196F33005149CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F53F3A9B27196F33005149CA /* GoogleService-Info.plist */; };
+		F56179C6272290CE00E48899 /* PostCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56179C5272290CE00E48899 /* PostCardService.swift */; };
+		F56179C8272297C500E48899 /* PostCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56179C7272297C500E48899 /* PostCardImage.swift */; };
+		F56179CA27229F2400E48899 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56179C927229F2400E48899 /* PostCard.swift */; };
+		F56179CC2722A27700E48899 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56179CB2722A27700E48899 /* ProfileService.swift */; };
 		F595698227180AA800D55C5D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595698127180AA800D55C5D /* Login.swift */; };
 		F595698527180D3A00D55C5D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595698427180D3A00D55C5D /* LoginView.swift */; };
 		F595698727180EC500D55C5D /* LoginModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595698627180EC500D55C5D /* LoginModifiers.swift */; };
@@ -21,6 +25,10 @@
 		F5A3B3F02721557100785FAF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B3EF2721557100785FAF /* Profile.swift */; };
 		F5A3B3F22721559700785FAF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B3F12721559700785FAF /* MainView.swift */; };
 		F5A3B3F4272155CF00785FAF /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B3F3272155CF00785FAF /* PostView.swift */; };
+		F5C1879D27225AB400187DD3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1879C27225AB400187DD3 /* PostModel.swift */; };
+		F5C1879F2722644F00187DD3 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1879E2722644F00187DD3 /* PostService.swift */; };
+		F5C187A2272284BE00187DD3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F5C187A1272284BE00187DD3 /* SDWebImageSwiftUI */; };
+		F5C187A4272284F400187DD3 /* Profileheader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C187A3272284F400187DD3 /* Profileheader.swift */; };
 		F5C3747B27200B2F00A72817 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3747A27200B2F00A72817 /* SessionStore.swift */; };
 		F5C3747D2720114300A72817 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3747C2720114300A72817 /* HomeView.swift */; };
 		F5D2B0882717E6F000BA5E7E /* ProyectoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2B0872717E6F000BA5E7E /* ProyectoApp.swift */; };
@@ -38,6 +46,10 @@
 		F53E2C1D271D06B00035F59E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F53E2C1F271D06D10035F59E /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		F53F3A9B27196F33005149CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F56179C5272290CE00E48899 /* PostCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardService.swift; sourceTree = "<group>"; };
+		F56179C7272297C500E48899 /* PostCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardImage.swift; sourceTree = "<group>"; };
+		F56179C927229F2400E48899 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		F56179CB2722A27700E48899 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		F595698127180AA800D55C5D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F595698427180D3A00D55C5D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F595698627180EC500D55C5D /* LoginModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModifiers.swift; sourceTree = "<group>"; };
@@ -46,6 +58,9 @@
 		F5A3B3EF2721557100785FAF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F5A3B3F12721559700785FAF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F5A3B3F3272155CF00785FAF /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F5C1879C27225AB400187DD3 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		F5C1879E2722644F00187DD3 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		F5C187A3272284F400187DD3 /* Profileheader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profileheader.swift; sourceTree = "<group>"; };
 		F5C3747A27200B2F00A72817 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		F5C3747C2720114300A72817 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F5D2B0842717E6F000BA5E7E /* Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C187A2272284BE00187DD3 /* SDWebImageSwiftUI in Frameworks */,
 				427BD2DEAC5B2667557B0CEC /* Pods_Proyecto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F53E2C18271CFAE00035F59E /* UsersModel.swift */,
+				F5C1879C27225AB400187DD3 /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +115,9 @@
 				F53E2C1D271D06B00035F59E /* AuthService.swift */,
 				F53E2C1F271D06D10035F59E /* StorageService.swift */,
 				F5C3747A27200B2F00A72817 /* SessionStore.swift */,
+				F5C1879E2722644F00187DD3 /* PostService.swift */,
+				F56179C5272290CE00E48899 /* PostCardService.swift */,
+				F56179CB2722A27700E48899 /* ProfileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -107,6 +127,9 @@
 			children = (
 				F595698127180AA800D55C5D /* Login.swift */,
 				F595698627180EC500D55C5D /* LoginModifiers.swift */,
+				F5C187A3272284F400187DD3 /* Profileheader.swift */,
+				F56179C7272297C500E48899 /* PostCardImage.swift */,
+				F56179C927229F2400E48899 /* PostCard.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -194,6 +217,9 @@
 			dependencies = (
 			);
 			name = Proyecto;
+			packageProductDependencies = (
+				F5C187A1272284BE00187DD3 /* SDWebImageSwiftUI */,
+			);
 			productName = Proyecto;
 			productReference = F5D2B0842717E6F000BA5E7E /* Proyecto.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +248,9 @@
 				Base,
 			);
 			mainGroup = F5D2B07B2717E6F000BA5E7E;
+			packageReferences = (
+				F5C187A0272284BE00187DD3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = F5D2B0852717E6F000BA5E7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,18 +324,25 @@
 				F53E2C1B271CFBB20035F59E /* Extensions.swift in Sources */,
 				F5C3747D2720114300A72817 /* HomeView.swift in Sources */,
 				F5A3B3F02721557100785FAF /* Profile.swift in Sources */,
+				F5C1879D27225AB400187DD3 /* PostModel.swift in Sources */,
 				F5C3747B27200B2F00A72817 /* SessionStore.swift in Sources */,
 				F595698727180EC500D55C5D /* LoginModifiers.swift in Sources */,
+				F5C1879F2722644F00187DD3 /* PostService.swift in Sources */,
+				F56179CC2722A27700E48899 /* ProfileService.swift in Sources */,
 				F5D2B08A2717E6F000BA5E7E /* ContentView.swift in Sources */,
 				F595698C27181C6000D55C5D /* ImagePicker.swift in Sources */,
 				F595698927181A4000D55C5D /* RegisterView.swift in Sources */,
 				F595698527180D3A00D55C5D /* LoginView.swift in Sources */,
 				F5A3B3F4272155CF00785FAF /* PostView.swift in Sources */,
+				F56179C6272290CE00E48899 /* PostCardService.swift in Sources */,
 				F53E2C1E271D06B00035F59E /* AuthService.swift in Sources */,
+				F56179CA27229F2400E48899 /* PostCard.swift in Sources */,
 				F53E2C19271CFAE00035F59E /* UsersModel.swift in Sources */,
+				F5C187A4272284F400187DD3 /* Profileheader.swift in Sources */,
 				F53E2C20271D06D10035F59E /* StorageService.swift in Sources */,
 				F5A3B3F22721559700785FAF /* MainView.swift in Sources */,
 				F5D2B0882717E6F000BA5E7E /* ProyectoApp.swift in Sources */,
+				F56179C8272297C500E48899 /* PostCardImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +547,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5C187A0272284BE00187DD3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5C187A1272284BE00187DD3 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5C187A0272284BE00187DD3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5D2B07C2717E6F000BA5E7E /* Project object */;
 }

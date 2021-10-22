@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
@@ -48,10 +48,13 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20){
-                Image(systemName: "camera").font(.system(size: 60,weight: .black, design: .monospaced))
+                WebImage(url: URL(string: "https://fdn.gsmarena.com/imgroot/news/18/03/instagram-timeline-changes/-728/gsmarena_001.jpg")!)
+                    .resizable()
+                    .frame(width: 360, height: 300, alignment: .trailing)
+                    
                 VStack(alignment: .leading){
-                    Text("Welcome Back").font(.system(size: 32,weight: .heavy))
-                    Text("SignIn To continue").font(.system(size: 16,weight: .medium))
+                    Text("Sign In To continue").font(.system(size: 32,weight: .heavy))
+                    
                 }
                     Login(value: $email, icon: "envelope.fill", placeholder: "E-mail")
                     Login(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true)

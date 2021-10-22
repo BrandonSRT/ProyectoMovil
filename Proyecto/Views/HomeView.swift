@@ -26,14 +26,16 @@ struct CustomTabView: View{
     
     var body: some View{
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)){
-            TabView(selection: $selectedTab){
-                MainView()
-                    .tag("house.fill")
-                PostView()
-                    .tag("camera.viewfinder")
-                Profile()
-                    .tag("person.fill")
-                
+            NavigationView{
+                TabView(selection: $selectedTab){
+                    MainView()
+                        .tag("house.fill")
+                    PostView()
+                        .tag("camera.viewfinder")
+                    Profile()
+                        .tag("person.fill")
+                    
+                }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea(.all, edges: .bottom)

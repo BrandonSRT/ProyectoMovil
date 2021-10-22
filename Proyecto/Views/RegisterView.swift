@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct RegisterView: View {
     @State private var email: String = ""
     @State private var password: String = ""
@@ -67,11 +67,13 @@ struct RegisterView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20){
-                Image(systemName: "camera").font(.system(size: 60,weight: .black, design: .monospaced))
-                VStack(alignment: .leading){
-                    Text("Welcome").font(.system(size: 32,weight: .heavy))
-                    Text("Sign UP to Starts").font(.system(size: 16,weight: .medium))
-                }
+                WebImage(url: URL(string: "https://fdn.gsmarena.com/imgroot/news/18/03/instagram-timeline-changes/-728/gsmarena_001.jpg")!)
+                    .resizable()
+                    .frame(width: 250, height: 200, alignment: .trailing)
+//                VStack(alignment: .leading){
+//                    Text("Welcome").font(.system(size: 32,weight: .heavy))
+//                    Text("Sign UP to Starts").font(.system(size: 16,weight: .medium))
+//                }
                 
                 VStack{
                     
@@ -80,11 +82,12 @@ struct RegisterView: View {
                         if profileImage != nil {
                             profileImage!.resizable()
                                 .clipShape(Circle())
-                                .frame(width: 200, height: 200)
+                                .frame(width: 100, height: 100)
                                 .padding(.top, 20)
                                 .onTapGesture(){
                                     self.showingActionSheet = true
                                 }
+                        
                         }else{
                             Image(systemName: "person.circle.fill")
                                 .resizable()
@@ -94,6 +97,7 @@ struct RegisterView: View {
                                 .onTapGesture {
                                     self.showingActionSheet = true
                                 }
+                            Text("Add photo +")
                         }
                     }
                 }
